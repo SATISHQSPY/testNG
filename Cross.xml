@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="3" name="ChromeTest" parallel="classes">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="crossBrowse.ProductMoo1Test"></class>
+			<class name = "crossBrowse.ProductMoo2Test"></class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="3" name="EdgeTest" parallel="classes">
+		<parameter name="Browser" value="edge"></parameter>
+		<classes>
+			<class name="crossBrowse.ProductMoo1Test"></class>
+			<class name="crossBrowse.ProductMoo2Test"></class>
+		</classes>
+	</test> <!-- Test --> 
+</suite> <!-- Suite -->
